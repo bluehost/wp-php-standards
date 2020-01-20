@@ -77,5 +77,14 @@
 
     <!-- Loads the PHP Compatibility ruleset. -->
     <rule ref="PHPCompatibilityWP"/>
+    
+    <!-- Assures global namespace methods across all products are prefixed with bluehost -->
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="bluehost"/>
+			</property>
+		</properties>
+	</rule>
 
 </ruleset>
